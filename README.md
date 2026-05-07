@@ -1,20 +1,71 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Email Automation & Reminder System 🚀
 
-# Run and deploy your AI Studio app
+A Python-based enterprise automation tool designed to handle high-frequency communication reminders using CSV data and SMTP protocols. Optimized for HR, Sales, and Operations workflows.
 
-This contains everything you need to run your app locally.
+## 📌 Project Overview
+This system automates the repetitive task of sending follow-up emails and reminders. It reads recipient data from a contact list, merges it with scheduled tasks (payments, meetings, etc.), and generates personalized HTML emails sent via secure SMTP.
 
-View your app in AI Studio: https://ai.studio/apps/435e2b21-ceb7-438f-9922-0fb9647b87a3
+### Key Problem Solved
+Manual follow-up is prone to human error and delays. This project ensures 100% consistency in communication, reducing missed deadlines and improving workflow efficiency.
 
-## Run Locally
+## 🛠 Tech Stack
+- **Core:** Python 3.x
+- **Data Handling:** Pandas (CSV parsing and merging)
+- **Email Engine:** smtplib (SMTP with TLS/SSL), email.message
+- **Task Scheduling:** `schedule` library
+- **Environment Management:** python-dotenv
+- **Logging:** Native Python logging for audit trails
 
-**Prerequisites:**  Node.js
+## 📂 Project Structure
+```text
+Email-Automation-System/
+├── data/               # CSV files (contacts, reminders)
+├── templates/          # HTML email templates
+├── src/                # Modular source code
+├── logs/               # Execution logs (audit trail)
+├── outputs/            # Generated PDF/CSV reports
+├── requirements.txt    # Library dependencies
+├── .env.example        # Configuration blueprint
+└── main.py             # Entry point
+```
 
+## 🚀 Getting Started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 1. Prerequisites
+- Python 3.8+ installed
+- A Gmail account (using App Password)
+
+### 2. Installation
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/email-automation.git
+cd email-automation
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### 3. Configuration
+1. Copy `.env.example` to `.env`
+2. Update `EMAIL_ADDRESS` and `EMAIL_PASSWORD` (Use Google App Password)
+3. Set `DRY_RUN=True` for safety during initial tests.
+
+### 4. Running the System
+```bash
+python main.py
+```
+
+## 📸 Screenshots & Proof of Work
+- **Terminal Output:** Shows schedule initialization and status logs.
+- **Email Logs:** `logs/automation.log` tracks every success and failure.
+- **Generated Report:** `outputs/report_XXXX.csv` summarizes the daily task.
+
+## 🤝 Contributing
+Contributions are welcome! If you find a bug or have a feature request, please open an issue.
+
+## ⚖️ License
+MIT License - feel free to use this for your portfolio!
