@@ -59,13 +59,3 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## 📸 Screenshots & Proof of Work
-- **Terminal Output:** Shows schedule initialization and status logs.
-- **Email Logs:** `logs/automation.log` tracks every success and failure.
-- **Generated Report:** `outputs/report_XXXX.csv` summarizes the daily task.
-
-## 🤝 Contributing
-Contributions are welcome! If you find a bug or have a feature request, please open an issue.
-
-## ⚖️ License
-MIT License - feel free to use this for your portfolio!
