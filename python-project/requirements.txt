@@ -1,0 +1,4 @@
+# Requirements for Email Automation & Reminder System
+pandas==2.2.2
+schedule==1.2.2
+python-dotenv==1.0.1

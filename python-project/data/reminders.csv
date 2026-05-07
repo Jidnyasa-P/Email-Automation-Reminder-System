@@ -1,0 +1,4 @@
+email,reminder_type,due_date,task_name
+john.doe@example.com,Payment,2024-06-01,Invoice #1234
+jane.smith@example.com,Meeting,2024-05-15,Project Sync
+alice.j@example.com,Subscription,2024-05-20,Premium Plan Renewal
